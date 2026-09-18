@@ -29,9 +29,9 @@ The browser never talks to Supabase or the LLM directly.
 ## Local development
 
 ```bash
-cp .env.example .env     # set LLM_API_KEY; leave SUPABASE_* empty to use ./data/store.json
 npm install
-npm run dev              # API on :8787, client on :5173 (proxied)
+npm run setup            # asks for your API key and writes .env (or copy .env.example by hand)
+npm run dev              # API on :8787, client on :5173 (proxied); also reachable from your phone on the same Wi-Fi
 ```
 
 Log in with one of the codes from `DEV_INVITE_CODES` (default `demo`).
