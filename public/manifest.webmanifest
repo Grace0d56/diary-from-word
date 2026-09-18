@@ -1,0 +1,10 @@
+{
+  "name": "几个词 · 日记",
+  "short_name": "几个词",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f6f1e7",
+  "theme_color": "#f6f1e7",
+  "lang": "zh-CN",
+  "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}
