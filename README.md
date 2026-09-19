@@ -45,7 +45,7 @@ Log in with one of the codes from `DEV_INVITE_CODES` (default `demo`).
    npx wrangler secret put LLM_API_KEY
    npx wrangler secret put SUPABASE_SERVICE_KEY
    ```
-4. `npm run deploy`
+4. `npm run deploy` (this downloads wrangler on demand; it is not part of `npm install` because its binary does not exist for Windows on ARM)
 
 For mainland users, put a custom domain in front of the Worker; the default `workers.dev` host is unreliable there.
 Swapping to a Chinese model later is three variables: `LLM_BASE_URL`, `LLM_MODEL`, `LLM_API_KEY`.
