@@ -1,0 +1,17 @@
+name = "diary-from-word"
+main = "src/server/worker.ts"
+compatibility_date = "2025-09-01"
+compatibility_flags = ["nodejs_compat"]
+
+[assets]
+directory = "./dist"
+not_found_handling = "single-page-application"
+run_worker_first = ["/api/*"]
+
+# Non-secret config. Secrets (LLM_API_KEY, SUPABASE_SERVICE_KEY) via:
+#   npx wrangler secret put LLM_API_KEY
+#   npx wrangler secret put SUPABASE_SERVICE_KEY
+[vars]
+LLM_BASE_URL = "https://api.openai.com/v1"
+LLM_MODEL = "gpt-4o-mini"
+SUPABASE_URL = ""
